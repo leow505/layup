@@ -23,6 +23,14 @@ public class Main {
           S(7) = 2 * (7-1) - (7-2) -> 2 * (6) - (5) = 2*12-7 = 17
           1,2,3,5,7,12,17
           Seems to be like Fibonacci pattern
+
+          Possible in matrix?
+          odd = S(2n-1)
+          even = S(2n)
+          Odd_n+1 = S(2n+1) = 2S(2n) - S(2n-1) = 2*Even_n - Odd_n
+          Even_n+1 = S(2n+2) = S(2n+1) + S(2n) = Odd_n+1 + Even_n
+          Even_n+1 -> 2*Even_n - Odd_n + Even_n = 3*Even_n - Odd_n
+          [-1,2] [-1,3] * [Odd, Even]
         */
         // Using Java BigInteger for big values
         BigInteger odd  = BigInteger.ONE; // S(1)
