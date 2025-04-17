@@ -22,4 +22,4 @@ def layup_sequence(n):
     result = np.matmul(A_pow, start)
     return result[0] if n % 2== 1 else result[1]
 
-print(layup_sequence(151))
+print(layup_sequence(10000))
